@@ -22,9 +22,10 @@ install:
   - pip install .
 
 script:
-  - pylint throwAwayPython/
-  - pylint tests/*.py
-  - cd tests && MPLBACKEND=Agg pytest --cov myFuns
+#  - pylint throwAwayPython/
+#  - pylint tests/*.py
+#  - cd tests && MPLBACKEND=Agg pytest --cov myFuns
+  - pytest
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
