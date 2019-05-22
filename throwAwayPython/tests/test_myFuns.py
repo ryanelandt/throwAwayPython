@@ -14,3 +14,7 @@ def test_answer():
 
 def test_another():
     assert add_numbers(4, 5) == 9
+
+
+def test_two_n_plus_one():
+    assert two_n_plus_one(10) == 21
