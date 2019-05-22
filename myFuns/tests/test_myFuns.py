@@ -1,6 +1,6 @@
 
 import pytest
-from throwAwayPython.myFuns import *
+from myFuns.myFuns import *
 
 
 # content of test_sample.py
