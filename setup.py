@@ -5,5 +5,5 @@ setup(name='myFuns',
       url='https://github.com/ryanelandt/throwAwayPython',
       author='Ryan Elandt',
       author_email='ryan.elandt@gmail.com',
-      packages='myFuns',
+      packages=['myFuns', ],
 )
