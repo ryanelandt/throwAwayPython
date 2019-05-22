@@ -16,7 +16,7 @@ addons:
       - python3-scipy
 
 before_install:
-  - pip install -U pytest pytest-cov
+  - pip install -U pytest pytest-cov codecov
   # pylint
 
 install:
@@ -26,7 +26,8 @@ script:
 #  - pylint myFuns/
 #  - pylint tests/*.py
 #  - cd tests && MPLBACKEND=Agg pytest --cov myFuns
-  - pytest
+  - pytest --cov=./
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  # - bash <(curl -s https://codecov.io/bash)
+  - codecov
