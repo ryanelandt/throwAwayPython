@@ -22,9 +22,9 @@ install:
   - pip install .
 
 script:
-  - pylint quadpy/
-  - pylint test/*.py
-  - cd test && MPLBACKEND=Agg pytest --cov quadpy
+  - pylint throwAwayPython/
+  - pylint tests/*.py
+  - cd tests && MPLBACKEND=Agg pytest --cov myFuns
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
